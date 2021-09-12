@@ -8,3 +8,5 @@ WHERE Od.cID = Cus.cID AND Od.oID = Ord.oID;
 SELECT cus.cName AS 'Khách hàng không mua' FROM Customer AS cus, Oder AS od
 WHERE NOT cus.cID = od.cID;
 #Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn (giá một hóa đơn được tính bằng tổng giá bán của từng loại mặt hàng xuất hiện trong hóa đơn. Giá bán của từng loại được tính = odQTY*pPrice)
+SELECT OD.oID, OD.oDate, P.pPRICE * ODD.odQTY  FROM Oder AS OD, OrderDetail AS ODD, Product AS P
+WHERE OD.oID = ODD.oID

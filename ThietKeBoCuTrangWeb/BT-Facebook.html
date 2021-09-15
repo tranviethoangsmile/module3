@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #facebook {
+            height: 25px;
+        }
+
+        #nav {
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background-color: rgb(24, 24, 37)
+        }
+
+        #nav {
+            clear: both;
+        }
+
+        
+
+        #main {
+            width: 100%;
+            margin-top: 60px;
+        }
+        #sidebar {
+            height: 400px;
+            position: fixed;
+            width: 25%;
+            margin-top: 60px;
+            margin-left: 0px;
+        }
+
+        #aside{
+            position: fixed;
+            width: 30%;
+            height: 400px;
+            margin-right: 0px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="https://img.utdstc.com/icon/fe0/ab6/fe0ab67fa0de2b2681602db5708a076f50dd21106e0c2d38b9661875a37e235e:200"
+                    alt="Facebook" style="width:50px; border-radius: 100%;">
+                <input type="search" name="facebook" id="search" placeholder="Tìm Kiếm trên facebook">
+            </div>
+            <div class="col-sm-1">
+                <button type="button"><span class="glyphicon glyphicon-home"
+                        style="height: 50px; width: 50px;"></span></button>
+            </div>
+            <div class="col-sm-1">
+                <button type="button"><span class="glyphicon glyphicon-user"
+                        style="height: 50px; width: 50px;"></span></button>
+            </div>
+            <div class="col-sm-1">
+                <button type="button"><span class="glyphicon glyphicon-flag"
+                        style="height: 50px; width: 50px;"></span></button>
+            </div>
+            <div class="col-sm-1">
+                <button type="button"><span class="glyphicon glyphicon-expand"
+                        style="height: 50px; width: 50px;"></span></button>
+            </div>
+            <div class="col-sm-1">
+                <button type="button"><span class="glyphicon glyphicon-shopping-cart"
+                        style="height: 50px; width: 50px;"></span></button>
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.aarp.net/content/dam/aarp/home-and-family/family-and-friends/2020/06/1140-facebook-post.imgcache.rev.web.900.513.jpg"
+                    alt="avatar" style="height: 50px; width: 50px;">
+                <span>Viết Hoàng</span>
+                <button type="reset"><span class="glyphicon glyphicon-th"
+                        style="height: 30px; width: 30px;"></span></button>
+                <button type="reset"><span class="glyphicon glyphicon-flash"
+                        style="height: 30px; width: 30px;"></span></button>
+                <button type="reset"><span class="glyphicon glyphicon-bell"
+                        style="height: 30px; width: 30px;"></span></button>
+                <button type="reset"><span class="glyphicon glyphicon-chevron-down"
+                        style="height: 30px; width: 30px;"></span></button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="col-sm-3">
+            <div id="sidebar">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">First item</a>
+                    <a href="#" class="list-group-item">Second item</a>
+                    <a href="#" class="list-group-item">Third item</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div id="main">
+            <p>Nó là một đứa khá khó hiểu, mãi cho đến lúc nó đi xa mãi, tôi cũng chưa hiểu được nó, con em gái bé bỏng
+                của tôi....
+
+                ***
+
+                em-gai-cua-troi
+
+                Chương 1
+
+                Sau 5 ngày bỏ nhà đi bụi thì cuối cùng tôi cũng chịu mò về nhà, vì hay tin ngoại tôi chống gậy đi tìm.
+                Ngoại mắt không thấy đường, tai nghễnh ngàng rồi, vừa đi vừa gào tên tôi khắp làng khắp xóm. Nghe thằng
+                bạn kể tới đó thôi tôi cũng không đủ can đảm ở cái chòi vịt nhà nó thêm một ngày nào nữa, sợ thì ít mà
+                thương ngoại thì nhiều, ngoại nuôi tôi từ bé đến giờ, ngoại cưng tôi nhất..
+
+                Lần đầu tiên trong đời tôi dạt nhà vì cái lý do chẳng giống ai, đó là ba tôi lấy vợ khác sau hơn 10 năm
+                gà trống nuôi... tôi. Đó là một phụ nữ người gốc Huế, bán bánh bèo lọc nậm ở chợ huyện, quen ba tôi
+                trong một lần ba tôi tới tiêm thuốc cho mấy con heo nhà bả (ba tôi là bác sĩ thú y, gọi thế cho oai chứ
+                chả có bằng cấp gì, toàn bị chúng nó gọi là "bác sĩ heo"). Sau đó thì bả hay ghé nhà tôi vì nhà tôi gần
+                chợ, bả đi bán sẵn ghé luôn, thỉnh thoảng có mua quà cho tôi, ban đầu thì tôi thích lắm, cho gì cũng
+                lấy. Nhưng sau khi biết ba tôi chuẩn bị lấy bả làm vợ thì tôi vứt hết, vứt sạch. Thậm chí thấy bả tới
+                nhà là tôi bỏ đi ra ngoài, không thèm chào như trước nữa.
+
+                Đến trước ngày cưới một hôm thì tôi bỏ đi, mọi người bận bịu quá nên chắc chả ai để ý đến tôi, khiến kế
+                hoạch phá vỡ đám cưới của tôi sụp đổ. Cưới xong mới bắt đầu thấy có người í ới đi tìm.
+
+                Ừ thì về nhà, chả ai dám nói gì, nói là tôi bỏ đi nữa, bây giờ tôi oai lắm, ai cũng sợ tôi, tôi dám bỏ
+                nhà đi bụi cơ mà. Nghĩ thế nên tôi chả thèm chào hỏi ai, lầm lũi xuống bếp bới cơm rồi mang ra vườn ngồi
+                trên khúc cây đổ ăn, ngấu nghiến như một con chó con đói lâu ngày, xong rồi thì lăn ra ngủ, mặc kệ.
+
+                Từ đấy tôi bắt đầu gắt gỏng, thỉnh thoảng còn bỏ ăn, bả gọi tôi không thèm thưa, trả lời thì luôn trống
+                không và chưa một lần tôi gọi bả là mẹ. Tôi cố tình chống đối và tỏ ra khó chịu với mẹ ghẻ, mặc dù bả
+                không làm gì tôi cả.
+
+                Có lần tôi nghe trộm được bả nói với ba tôi là bả thương tôi như con đẻ, từ từ bả sẽ lấy được thiện cảm
+                của tôi. Đừng mơ lừa được tôi nhé "Mấy đời bánh đúc có xương, mấy đời mẹ ghẻ lại thương con chồng" Câu
+                này tôi thuộc lòng từ lâu rồi, tôi thách đấy!
+
+                Cứ thế năm tháng sau trôi qua, bả vẫn lầm lũi tiếp cận và lấy lòng tôi, còn tôi thì ngày càng ngang
+                ngạnh, có lúc tôi còn nói hỗn với bả. Ba tôi thì vốn hiền lành như khúc củi, ổng lại bị thọt một chân,
+                chưa bao giờ ổng đánh tôi cả. Thế nên tôi càng được thể lấn tới.
+
+                Rồi một ngày bả dắt một con bé về, nó đen nhẻm, tóc đỏ quạnh như cháy, quần áo thì quê mùa. Đích thị là
+                con bé nhà quê vì chỉ có bọn nhà quê mới thắt tóc bím 2 bên và mặc áo tay phồng, bọn con gái lớp tôi nó
+                bảo thế. Nó khúm núm chào tôi, mặt có vẻ sợ hãi vì tôi trừng mắt nhìn nó. Ba tôi bảo nó là con riêng của
+                "mẹ", ở dưới quê với bà nội, vì học chưa hết học kì nên bây giờ mới chuyển tới ở được, bảo tôi từ đây
+                chăm sóc bảo ban em học hành. Tôi chả thèm nói gì, bỏ đi đá bóng, con riêng với chả con chung, rõ là
+                rách việc.
+
+                Từ ngày có nó tôi lại càng thêm khó chịu, nó đi ra đi vào, đụng cái này ngó cái kia.. Cái gì cũng hỏi,
+                cũng cầm lên lắc lắc thử, coi bộ mới thấy lần đầu. Sai nó ủi đồ thì nó lớ ngớ làm cháy mất cái áo đi học
+                vì không biết vặn chỉnh nhiệt độ, bắt nó chép bài hộ thì nó chép ra cả lề vở (sau này tôi mới biết vở nó
+                cuốn nào cũng thế, chép ra lề để tiết kiệm). Đến việc sai mở tivi nó cũng không biết cách, rõ là quê một
+                cục. Tôi bực mình chửi nó: "Mày chưa xem tivi bao giờ à?" Nó đỏ mặt, nó bảo bà nội nó cũng có cái đài
+                casset, nhưng mà chỉ có tiếng, không có hình người. Tóc nó ban đầu tôi tưởng nó nhuộm, sau hỏi nó mới
+                bảo là ở dưới quê đi chăn bò với lội ruộng nhiều nên nó bị cháy. Nghe thế tôi cười hô hố..
+
+                Vào năm thì nó đi học, nó học thua tôi hai lớp, tôi học lớp 8, nó học lớp 6. Trẻ em ở quê thì thường dậy
+                thì muộn, đến lớp 10 tôi mới bắt đầu "lớn", lớp 8 tôi vẫn còn còi cọc và trẻ con lắm, hầu hết con trai
+                trong lớp tôi đều thế, chả riêng gì tôi. Nó còn thê thảm hơn tôi, gầy đét và còi cọc như con bé tiểu
+                học, mới đầu nghe nó nói nó học lớp 6 tôi còn há mồm không tin.
+
+                Nhà có mỗi một chiếc Phượng Hoàng nên ba tôi bắt tôi phải chở nó đi học, mặc dù tôi cực lực phản đối.
+                Mấy ngày đầu tôi phóng cái vèo đi trước, mặc kệ nó lủi thủi đi bộ theo sau. Mẹ nó thì đi bán từ sớm, ba
+                tôi thì không đi xe đạp được với lại cũng chả có xe, thế nên nó phải cuốc bộ đến trường, mặc dù khá xa.
+                Có lần quên tập, tôi chạy ngược xe về nhà thì thấy nó đang mồ hôi nhễ nhại, mặt mũi đỏ gay vì mệt, tôi
+                lấy làm đắc chí lắm, nghĩ bụng: "cho mày chết đi con nhà quê"...
+
+                Một lần nó sốt mấy ngày liền do đi học nắng quá, nó vẫn giấu không cho ba tôi và mẹ nó biết vụ tôi không
+                chở nó đi học. Thấy nó nằm rên hử hử trên giường, lúc tỉnh nó còn dặn tôi để quần áo đấy nó giặt, nó
+                đang mệt quá không giặt được. Nghe nó lảm nhảm tự nhiên thấy hơi.. tội tội và có lỗi với nó.
+
+                Nó hết sốt và đi học lại thì tôi bắt đầu cho nó đi chung xe, ban đầu nó hơi ngạc nhiên, sau nó cũng lên,
+                suốt cả năm học tôi chở nó, chưa bao giờ tôi thấy nó nói gì. Thỉnh thoảng có nghe nó hát nho nhỏ gì đó,
+                tôi quay lại thì nó lại im. Nó là một đứa khá khó hiểu, mãi cho đến lúc nó đi xa mãi, tôi cũng chưa hiểu
+                được nó, con em gái bé bỏng của tôi....
+
+                Chương 2
+
+                Sau vài lần bị bạn bè bắt gặp tôi chở con bé đi học, bọn trong lớp tôi ngay lập tức rêu rao cái tin động
+                trời này vào lớp: "Thằng T có bồ rồi tụi bay ơi, thằng T có bồ rồi, bồ nó xấu như con ma lem". Có thằng
+                còn thề sống thề chết là thấy bọn tôi ôm nhau, đúng là chém gió một cách trắng trợn kinh tởm mà. Tôi
+                thanh minh không được, điên máu gào toáng lên rằng đó là "em họ" tôi, đứa nào còn nói nữa thì cẩn thận
+                ăn đấm. Thấy tôi làm dữ, bọn nó cũng chùn không nói nữa, nhưng tôi để ý bọn con gái nhìn tôi với ánh mắt
+                rất đểu, thỉnh thoảng có đứa còn đưa tay bịt miệng cười hi hí. Thật là một nỗi oan động trời mà, tôi đẹp
+                trai thế này, lại là con của bác sĩ... mà lại đi cặp bồ với một đứa đen đủi xấu xí như thế à, nghĩ sao
+                vậy chứ, thật bực mình hết chỗ nói.
+
+                Hôm sau tôi quyết định không chở nó đi nữa, kệ cho nó đi bộ. Nó cũng không nói gì, cúi đầu lặng lẽ rảo
+                bước khi thấy tôi phóng xe đi trước. Nhưng mà đi được một đoạn, ngẫm lại cái hôm nó ốm liệt giường, thều
+                thào xin lỗi đến tội nghiệp vì không giặt được quần áo, nấu cơm cho tôi được, để tôi phải làm, nó nói
+                như là nó có lỗi lắm ấy... Tôi quay xe lại, dù sao thì...
+
+                Từ xa xa tôi thấy nó đang lững thững đi, trông dáng nó bé tí teo như cục kẹo vậy, trên lưng là cái cặp
+                to tướng. À mà không giống cục kẹo lắm, nhìn kỹ thì giống con rùa con hơn, một con rùa cả nghĩa đen và
+                nghĩa bóng... Tôi bảo nó lên xe, nó im lặng bước lên, cũng lại chả nói gì. Nó như là bản sao của mẹ nó
+                vậy, không bao giờ chống đối hay hỏi han điều gì, mẹ con nó như những người phụ nữ ở nhà thống lý Pá Tra
+                ngày xưa...
+
+                Tôi đi đường tắt để tránh sự dòm ngó của bọn trong lớp, con đường vòng vo và vắng nhà cửa. Tôi chở nó
+                chạy xe băng băng qua vườn điều, vườn cam, vườn mía, băng qua cả những ngày tôi phởn chí dừng xe lại
+                trèo vào bứt trộm ổi cho nó ăn, nó ở ngoài trông xe mà mặt tái mét, băng qua cả những lần tôi điên tiết
+                bỏ nó giữa đường cho nó đi bộ, làm nó bị trễ cả giờ kiểm tra, băng qua cả những hôm bị xịt lốp xe, hỏng
+                xe, tôi thì dắt, nó đi phía sau phì phò đẩy hộ...
+
+                Bây giờ thỉnh thoảng có dịp về quê tôi hay xách chiếc xe đạp ngày xưa đi ngang con đường ấy để tìm lại
+                kỉ niệm, có những lúc giật mình buột miệng gì đó mà không thấy ai trả lời, tôi quay lại nhìn phía sau,
+                không còn thấy cô em gầy gò của tôi hai tay bám chặt vào yên xe, mặt ngơ ngác thay cho câu hỏi nữa...
+                Bất giác tôi không còn sức để đi tiếp, dừng xe lại... nước mắt chảy dài...
+
+                Ngày ấy bọn tôi hay có trò chơi gảy hình, hình Songoku và dũng sĩ Héc-man. Trong lớp tôi hầu như ngày
+                nào cũng mở hội gảy hình trước giờ học. Tôi chơi dở tệ nên thường xuyên thua sạch, bao nhiêu tiền ba tôi
+                cho mua sách vở bút mực tôi đều mua hình và cống nạp hết cho tụi bạn. Hôm đấy cay cú vì lời thách thức
+                của thằng bạn quá mà hết sạch tiền, tôi chả biết làm sao cả. Ba tôi thì đi vắng chưa về nên không nói
+                xạo để xin tiền được. Tôi đánh liều... Lục cặp của nó trộm tiền, vì tôi biết mẹ nó hay dấm dúi tiền cho
+                nó mua mấy thứ linh tinh của bọn con gái. Định bụng khi thắng cuộc tôi sẽ bán hình lại lấy tiền rồi khéo
+                léo bỏ vào trả lại cho nó như không có chuyện gì xảy ra. Ai ngờ đâu... tôi thua sạch sẽ...
+
+                Cả ngày hôm đấy tôi cứ lấm la lấm lét nhìn nó, tôi chỉ sợ nó méc mẹ nó hay ba tôi. Rồi thì ba tôi vặn
+                hỏi, tôi sẽ lắp bắp, rồi thì lộ ra cả chuyện tôi không mua sách vở, rồi thì... lúc đấy thì chỉ có mà
+                nhục hơn chết. Nhưng mà quái lạ là tôi không thấy nó nói gì, tôi chắc chắn là nó đã biết vì tôi thấy nó
+                soạn sách vở đi học, có lôi mấy thứ trong cái ngăn đựng tiền ra. Nhưng dù sao, tôi cũng thở phào nhẹ
+                nhõm như vừa thoát được một kiếp nạn...
+
+                Mãi sau này tôi mới phát hiện ra một điều, nó là đứa con gái duy nhất trong trường đội nón lá đi học.
+                Trước đây tôi tưởng điều đó là bình thường vì thấy cô, dì, hay những phụ nữ tôi quen đều đội như vậy.
+                Nhưng khi nghe con gái trong lớp xì xào: "con bồ thằng T nó vẫn đội nón lá đi học đấy, đúng là gái dưới
+                quê lên có khác" thì tôi mới chột dạ, như thế là nhà quê, là không hợp thời...
+
+                Tôi về nhà lôi nó ra hỏi: "Con kia, sao mày lại đội nón lá đi học, đây có phải như dưới quê mày đâu, mày
+                không biết xấu hổ à?". Nó lí nhí: "Tiền em dành được để mua nón hoa, em làm mất rồi". Tôi đứng hình và
+                hiểu ra ngay, thì ra những khi mẹ nó cho nó tiền mua quà, mua bút sách này nọ, nó đều tiết kiệm lại, vở
+                nó viết ra cả lề, nó tính nháp ra chằng chịt cái bàn học vì sợ tốn giấy, trong khi tôi thì giật giấy
+                trắng trong tập gấp máy bay phi ầm ầm, bộ đồ đi học của nó, cũng là được "thừa kế" của một người chị họ,
+                sách giáo khoa của nó cũng là đi mượn về, nhiều quyển còn bị xé lam nham... Nó tiết kiệm từng đồng từng
+                xu để rồi cuối cùng bị thằng khốn nạn như tôi ăn cắp mất...
+
+                Tôi đuổi nó vào rồi ngồi thẫn thờ một lúc, lần đầu tiên tôi nhận ra một điều là dù sao nó cũng là một
+                đứa con gái, cũng biết xấu hổ khi bạn bè chê cười, cũng thích nơ kẹp tóc và nón hoa như bao đứa khác...
+                Tôi thấy ân hận ghê gớm, tâm trạng nặng nề kéo dài mãi đến tận mấy hôm sau...
+
+                Chương 3
+
+                Những ngày tháng trẻ con vụng dại ấy rồi cũng trôi qua nhanh chóng, vẫn chiếc ngựa chiến ấy, tôi chở nó
+                băng băng qua tuổi thơ, băng qua những ngày tháng cuối cùng của đời học sinh ở trường huyện, nhưng tôi
+                không còn cố tình phóng nhanh để cho nó hoảng sợ nữa, tôi không còn bắt nó đi bộ một đoạn rất xa khi gần
+                đến trường để tránh bị phát hiện nữa. Tôi chở thẳng nó vào trường, như thể một thằng anh trai chở em gái
+                đi học. Ừ, nó là em gái tôi mà, lần đầu tiên trong đời tôi có em gái, nó lại ngoan và hiền như thế, có
+                lý do gì để tôi bắt nạt nó hoài cơ chứ... Tôi nhận ra điều này, tuy muộn nhưng không trễ. Nó thấy tôi
+                bắt đầu đối tốt với nó, không còn quát mắng nó như xưa nữa, không còn dọa đánh nó mỗi lần nó làm gì lớ
+                ngớ nữa... Nó không nói gì nhưng nó nhìn tôi lạ lắm, không còn thái độ sợ sệt như trước đây nữa, hình
+                như mắt nó có gì đó long lanh... Nếu nó là con cún con, tôi ắt hẳn nó sẽ vẫy vẫy cái đuôi bé tí...
+
+                Một ngày cuối năm lớp 9, tôi đang ngồi học trong lớp thì nó ở đâu chạy vào, nước mắt nước mũi tèm nhem:
+                "Ba bị tông xe rồi anh Bi ơi, người ta đưa vô bệnh viện rồi..."
+
+                Tôi chở nó phóng như bay vào bệnh viện, sáng nay có người mang ô tô đến chở ba tôi đi vào xã chích ngừa
+                cho gia súc, bảo là chiều sẽ về...
+
+                Vừa để nó xuống xe, tôi phóng như bay vào phòng cấp cứu, tôi biết nó ở chỗ nào vì bà ngoại tôi từng 2
+                lần nằm ở đây. Cô dì chú bác họ hàng tôi đứng chật ngoài phòng cấp cứu, ba tôi vốn hiền lành và tốt bụng
+                nên được cả họ quý mến... Cô tôi thấy tôi đến thì chạy lại ôm chồm lấy tôi khóc nức nở. Tôi hoảng loạn
+                mặt mày tái mét, miệng lắp bắp: "ba... ba con... sao rồi cô?" Cô không trả lời mà đưa tay lên bụm miệng
+                rồi nấc càng mạnh... Tôi hoảng quá, chạy lại túm lấy anh tôi, chú tôi, bác tôi... gào toáng lên: "ba con
+                sao rồi, ba con sao rồi...". Không ai đủ dũng khí để nói gì với tôi, một thằng mất mẹ từ năm 3 tuổi...
+                Họ sợ phải chính miệng thốt ra với tôi rằng: "Bi à, ba con mất rồi..."...
+
+                Từ ngày ba tôi mất, tôi biến thành một người hoàn toàn khác, không còn muốn quậy phá làng xóm nữa, không
+                còn muốn đùa giỡn chạy nhảy nữa, tôi gần như là một cái xác không hồn... Bạn bè cũng nhìn tôi bằng ánh
+                mắt khác, một ánh mắt đầy thương hại, lớp tôi còn tổ chức đến nhà tôi "thăm và chia sẻ" với tôi, tôi
+                biết thế nên trốn sang nhà ngoại, tôi chẳng cần ai thương hại hết, tôi chẳng cần ai hết, tôi chỉ cần ba
+                tôi mà thôi... ba ơi...
+
+                Con em gái tôi, từ dạo đó cũng trở nên ít nói hơn. Hằng ngày tôi vẫn chở nó đi học, vì tôi chỉ còn vài
+                tháng ngắn ngủi nữa là hết cấp 2 rồi, dù sao thì như ngoại tôi nói, tôi phải cố học để ba mẹ tôi ở dưới
+                suối vàng được yên lòng...
+
+                Cô tôi sang nhà nói chuyện với mẹ kế của tôi về việc để tôi qua nhà cô ở, cô sẽ nuôi và chăm sóc tôi.
+                Tôi ở trong buồng nghe mẹ kế nói, chậm rãi và từ tốn bằng giọng Huế khá nặng, rằng bà thương tôi như
+                con, ba tôi mất rồi nên bà phải có trách nhiệm nuôi nấng tôi nên người, bà nhất định không để tôi phải
+                khổ...
+
+                Từ đấy mẹ kế tôi nuôi tôi và em gái bằng gánh hàng chợ nắng đắt mưa ế, bằng những buổi sáng dậy sớm tinh
+                sương để nặn nặn gói gói chiên chiên xào xào. Tôi nghe hai mẹ con họ thì thầm, để tránh gây ồn "cho anh
+                Bi ngủ... ", tôi nghe con em kể chuyện đi học ở trường, tôi nghe họ nói đến những gì cao xa và tốt đẹp
+                lắm... Chiếc đèn Hoa Kỳ treo ở bếp in bóng hai người phụ nữ bé nhỏ ấy vào tường, in cả vào những giấc mơ
+                của tôi sau này, giấc mơ có mùi hành phi thơm phức... Con bé em tôi từ dạo đấy phải dậy sớm để phụ mẹ
+                nên bị thiếu ngủ, có lần tôi chở nó đi học, quay xe lại nhìn thì thấy tay nó vẫn bám chặt yên, nhưng mắt
+                thì đã nhắm nghiền từ lúc nào, lông mi nó dài và cong lắm...
+
+                Nhiều lần tôi áy náy quá, cố dậy theo để phụ làm bánh, nhưng mẹ kế nhất quyết không cho, nằng nặc bảo
+                tôi đi ngủ, bà nói rằng chỉ còn vài tháng nữa là thi chuyển cấp 3 rồi, tôi nhất định phải đậu trường
+                chuyên trên tỉnh, cứ học giỏi vào là khổ bao nhiêu bà cũng chịu được, còn con Luyến (em gái tôi) thì
+                chưa phải chuyển cấp nên để nó phụ. Bà xua tôi vào ngủ như xua tà...
+
+                Cuối cùng tôi cũng đậu vào trường chuyên trên thị xã thật, con em tôi là người biết đầu tiên. Nó cầm tờ
+                giấy báo phóng ra ngoài mương câu cá để tìm tôi, bộ dạng nó hớn hở còn hơn cả tôi. Nó đưa tôi tờ giấy,
+                mắt nó mở to và rạng rỡ: "anh Bi xem này. ". Tôi cầm tờ giấy báo trên tay, vui thì ít mà nhớ ba tôi thì
+                nhiều... Nếu ba tôi mà còn sống, chắc chắn ông sẽ vứt cả nạng mà chạy đi tìm tôi... "Bi phải thi khối B,
+                làm hẳn bác sĩ, bác sĩ thật, chứ không phải bác sĩ heo như ba... "
+
+                Chương 4
+
+                Trường mới cách nhà tôi gần 50km, tất nhiên là với chiếc xe đạp cọc cạch, tôi không thể nào đạp xe đến
+                trường với một khoảng cách xa như vậy được. Vì vậy chắc chắn nếu tôi đi học cấp 3 trên đấy, tôi phải trọ
+                học, phải xa nhà. Vấn đề ở đây không phải là tôi không muốn đi học xa, mà là vì nếu ở trọ thì sẽ có biết
+                bao nhiêu vấn đề phát sinh. Tiền nhà trọ, tiền ăn, tiền học, tiền điện, tiền nước... Tiền tiền tiền, thứ
+                mà nhà tôi thiếu nhất vào lúc này, khi trụ cột là ba tôi đã không còn nữa...
+                Lúc ngồi ăn cơm, tôi bảo với mẹ kế: "Thôi con ở nhà học cũng được, ở trọ rồi tiền đâu mà học, với lại
+                con thích ở nhà thôi, lên đó biết chơi với ai". Bà nghe vậy thì dừng đũa, nói với tôi một cách nghiêm
+                nghị nhất: "Con nghe cô, con nhất định phải đi học, cô còn lo được thì con cứ an tâm mà học hành, sau
+                này cô già yếu không còn sức nữa thì con còn phải thay cô lo cho con Luyến nữa chứ... ". Bà nói nhiều
+                lắm, đại ý như là tôi phải hoàn thành tâm nguyện của ba tôi, sau này tương lai còn dài lắm, rồi thì cứ
+                học thật giỏi, phải làm gương cho em... Bà ít học, nửa chữ cắn đôi bà cũng không biết, nên bà cảm nhận
+                được cái sự khổ của việc không được đến trường, được đi học... Con Luyến nó cũng ngồi im nghe, nó cũng
+                mong tôi đi học lắm, nó còn bảo sau này nó cũng muốn vào trường chuyên như tôi, nó sẽ học để làm cô
+                giáo...
+
+                Một ngày cuối tháng tám, tôi dậy rất sớm để chuẩn bị lên đường, áo len mũ trùm kín mít vì trời lạnh.
+                Chiếc balo đã chật cứng quần áo con Luyến nó xếp vào cho tôi hôm qua, một cái bao đựng hũ ruốc khô mẹ kế
+                làm, một bao gạo đựng trong túi cám con cò, vài thứ vật dụng linh tinh... Ngày ấy phương tiện di chuyển
+                còn ít, đi đâu xa xa là phải đi bằng ô tô than, mỗi lần ba tôi đi lên thị xã mua thuốc hay học lớp kỹ
+                năng nông nghiệp về là áo quần ướt đẫm mồ hôi và bồ hóng bụi than thì bám đen kịt, lấm lem mặt mũi như
+                Bao Công...
+
+                Đó cũng là lần đầu tiên trong đời tôi rời khỏi cái phố huyện nghèo, nơi tôi sinh ra và lớn lên. Mẹ kế
+                hôm đấy vẫn đi bán, vì nghỉ bán một ngày là cụt vốn ngay. Tối hôm trước bà đã dặn dò tôi đủ điều rồi,
+                ngồi nghe căn dặn, tôi bắt đầu cảm nhận được tình cảm của bà dành cho tôi, đứa con riêng của chồng suốt
+                ngày chỉ biết chống đối và quậy phá...
+
+                Tôi chở con Luyến qua nhà ngoại, để nó ngồi sau ôm ba lô và đồ đạc cho tôi. Ngoại tôi biết là sáng nay
+                tôi sẽ qua nên đã chống gậy đứng sẵn ngoài cửa chờ từ lúc nào. Ngồi nói chuyện với ngoại một lúc thì tôi
+                chào ngoại về để kịp xe, ngoại dúi cho tôi một cục tiền lẻ cuộn tròn và cột chặt bằng dây thun, bảo tôi
+                cầm lấy thỉnh thoảng ăn quà, cục tiền tròn vo và cũ kỹ, có lẽ ngoại đã dành từ rất lâu </p>
+
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div id="sidebar">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">First item</a>
+                    <a href="#" class="list-group-item">Second item</a>
+                    <a href="#" class="list-group-item">Third item</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

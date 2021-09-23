@@ -1,11 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: tvh-macbookpro
-  Date: 22/09/2021
-  Time: 13:39
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,6 +6,21 @@
     <%@include file="layout/layout.jsp"%>
 </head>
 <body>
+<a href="/customer?action=create">
+    <button type="button" class="btn btn-danger">
+        CREATE
+    </button>
+</a>
+<a href="/index.jsp">
+    <button type="button" class="btn btn-danger">
+        HOME
+    </button>
+</a>
+<a href="/customer?action=search">
+    <button type="submit" class="btn btn-danger">
+        SEARCH
+    </button>
+</a>
 <table class="table">
     <thead>
     <tr>
@@ -25,16 +33,6 @@
     </tr>
     </thead>
     <tbody>
-    <a href="/customer?action=create">
-        <button type="button" class="btn btn-danger">
-            CREATE
-        </button>
-    </a>
-    <a href="/index.jsp">
-        <button type="button" class="btn btn-danger">
-            HOME
-        </button>
-    </a>
         <c:forEach var="customer" items="${customerList}">
         <tr>
             <td><c:out value="${customer.id}"></c:out></td>
@@ -55,12 +53,9 @@
                     DELETE
                 </button>
                 </a>
-
             </td>
-
         </tr>
         </c:forEach>
-
     </tbody>
 </table>
 </body>

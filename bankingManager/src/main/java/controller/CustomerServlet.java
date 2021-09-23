@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "CustomerServlet", urlPatterns = "/customer")
@@ -41,6 +42,9 @@ public class CustomerServlet extends HttpServlet {
                 case "transfer":
                     formTransfer(request,response);
                     break;
+                case "search":
+                    showFormSearch(request,response);
+                    break;
                 default:
                     showListCustomer(request,response);
                     break;
@@ -49,6 +53,11 @@ public class CustomerServlet extends HttpServlet {
             e.printStackTrace();
         }
 
+    }
+
+    private void showFormSearch(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/customer/search.jsp");
+        requestDispatcher.forward(request,response);
     }
 
     private void formWithDraws(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -67,7 +76,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
-            int id = Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("id"));
         CustomerserviceImpl customerservice = new CustomerserviceImpl();
         customerservice.deleteCustomer(id);
         showListCustomer(request,response);
@@ -98,8 +107,8 @@ public class CustomerServlet extends HttpServlet {
     private void showListCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         CustomerserviceImpl customerservice = new CustomerserviceImpl();
         List <Customer> customerList = customerservice.findAll();
-        request.setAttribute("customerList",customerList);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("customer/list.jsp");
+        request.setAttribute("customerList",customerList);
         requestDispatcher.forward(request,response);
     }
 
@@ -126,6 +135,9 @@ public class CustomerServlet extends HttpServlet {
                 case "transfer":
                     showFormTrasfer(request,response);
                     break;
+                case "search":
+                    formSearch(request,response);
+                    break;
                 default:
                     showListCustomer(request,response);
                     break;
@@ -134,6 +146,16 @@ public class CustomerServlet extends HttpServlet {
             e.printStackTrace();
         }
 
+    }
+
+    private void formSearch(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
+        List <Customer> searchList = new ArrayList<>();
+        CustomerserviceImpl customerservice = new CustomerserviceImpl();
+        String searchValue = request.getParameter("search");
+        searchList = customerservice.search(searchValue);
+        request.setAttribute("searchList",searchList);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/customer/showSearchList.jsp");
+        dispatcher.forward(request,response);
     }
 
     private void showFormWithDraws(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {

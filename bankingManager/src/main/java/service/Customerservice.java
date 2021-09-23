@@ -15,5 +15,6 @@ public interface Customerservice {
    public void deposits (int id_customer,float money) throws SQLException;
    public void transfer (int id_cus_tras,float money,int id_cus_rec) throws SQLException;
    public void withdraws (int id_customer,float money) throws SQLException;
+   public List <Customer> search (String valueSearch) throws SQLException;
 
 }

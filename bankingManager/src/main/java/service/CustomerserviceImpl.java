@@ -21,6 +21,7 @@ public class CustomerserviceImpl implements Customerservice {
     final static String DEPOSITS = "call sp_add_Deposits (?,?)";
     final static String TRANSFER = "call sp_Transfers (?,?,?);";
     final static String WITHDRAWS = "call sp_Withdraws (?,?)";
+    final static String SEARCH = "SELECT * FROM customer WHERE name LIKE ? OR address LIKE ? ";
 
 
     public CustomerserviceImpl () {
@@ -51,7 +52,7 @@ public class CustomerserviceImpl implements Customerservice {
             while (rs.next()) {
                 int id_cus = rs.getInt("id");
                 String name = rs.getString("name");
-                String birthday = rs.getString("birthday");
+                String birthday = rs.getString("birthDay");
                 String address = rs.getString("address");
                 Float balance = rs.getFloat("balance");
                 customerList.add(new Customer(id_cus, name, birthday, address, balance));
@@ -70,11 +71,13 @@ public class CustomerserviceImpl implements Customerservice {
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CUSTOMER);)
         {
+
             preparedStatement.setString(1,customer.getName());
             preparedStatement.setString(2,customer.getBirthDay());
             preparedStatement.setString(3,customer.getAddress());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
+
         }
         catch (SQLException throwables)
         {
@@ -204,5 +207,33 @@ public class CustomerserviceImpl implements Customerservice {
         {
             printSQLException(e);
         }
+    }
+
+    @Override
+    public List<Customer> search(String valueSearch) throws SQLException {
+        List <Customer> searchList = new ArrayList<>();
+        try (Connection connection = getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(SEARCH);)
+        {
+            String sql = "%" + valueSearch + "%";
+            preparedStatement.setString(1,sql);
+            preparedStatement.setString(2,sql);
+            System.out.println(preparedStatement);
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                int id_cus = rs.getInt("id");
+                String name = rs.getString("name");
+                String birthday = rs.getString("birthDay");
+                String address = rs.getString("address");
+                Float balance = rs.getFloat("balance");
+                searchList.add(new Customer(id_cus, name, birthday, address, balance));
+            }
+
+        }
+        catch (SQLException throwables)
+        {
+            throwables.printStackTrace();
+        }
+        return searchList;
     }
 }

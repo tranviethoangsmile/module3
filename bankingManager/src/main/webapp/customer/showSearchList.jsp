@@ -21,7 +21,7 @@
     <th scope="col">Birthday</th>
     <th scope="col">Address</th>
     <th scope="col">Balance</th>
-    <th rowspan="2">Action</th>
+    <th rowspan="5">Action</th>
   </tr>
   </thead>
   <tbody>
@@ -43,6 +43,27 @@
         <a href="/customer?action=delete&id=${searchList.id}">
           <button type="button" class="btn btn-danger">
             DELETE
+          </button>
+        </a>
+      </td>
+      <td>
+        <a href="/customer?action=transfer">
+          <button type="button" class="btn btn-danger">
+            TRANSFER
+          </button>
+        </a>
+      </td>
+      <td>
+        <a href="/customer?action=deposits">
+          <button type="button" class="btn btn-danger">
+            DEPOSITS
+          </button>
+        </a>
+      </td>
+      <td>
+        <a href="/customer?action=withdraws">
+          <button type="button" class="btn btn-danger">
+            WITHDRAWS
           </button>
         </a>
       </td>
